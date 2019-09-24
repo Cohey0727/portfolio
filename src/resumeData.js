@@ -1,5 +1,6 @@
 let resumeData = {
   imagebaseurl: "https://github.com/Cohey072/",
+  facebook: "https://www.facebook.com/okamoto.kohei.0727",
   name: "Kohei Okamoto",
   role: "Backend, Frontend, and Infrastructure engineer",
   roleDescription:
@@ -31,46 +32,64 @@ let resumeData = {
   website: "https://www.facebook.com/okamoto.kohei.0727",
   education: [
     {
-      UniversityName: "The LNM Insitute of Information Technology",
-      specialization: "Some specialization",
-      MonthOfPassing: "Aug",
-      YearOfPassing: "2020",
-      Achievements: "Some Achievements"
-    },
-    {
-      UniversityName: "Some University",
-      specialization: "Some specialization",
-      MonthOfPassing: "Jan",
-      YearOfPassing: "2018",
-      Achievements: "Some Achievements"
+      UniversityName: "Osaka University",
+      specialization: "Engineering Science",
+      MonthOfPassing: "Apr",
+      YearOfPassing: "2016",
+      Achievements: "Electronic physics"
     }
   ],
   work: [
     {
-      CompanyName: "Some Company",
-      specialization: "Some specialization",
-      MonthOfLeaving: "Jan",
+      CompanyName: "WorksApplications",
+      CompanyURL: "https://www.worksap.co.jp",
+      specialization: "SIer",
+      MonthOfLeaving: "Oct",
       YearOfLeaving: "2018",
-      Achievements: "Some Achievements"
+      Achievements: "Attendance Management System Operation"
     },
     {
-      CompanyName: "Some Company",
-      specialization: "Some specialization",
-      MonthOfLeaving: "Jan",
-      YearOfLeaving: "2018",
+      CompanyName: "hokan",
+      CompanyURL: "https://hkn.jp",
+      specialization: "Backend, Frontend, and Infrastructure engineer",
+      MonthOfLeaving: "",
+      YearOfLeaving: "Currently enrolled",
       Achievements: "Some Achievements"
     }
   ],
-  skillsDescription: "Your skills here",
+  skillsDescription: "My skills",
   skills: [
     {
-      skillname: "HTML5"
+      skillname: "HTML5",
+      percentage: 85
     },
     {
-      skillname: "CSS"
+      skillname: "CSS",
+      percentage: 80
     },
     {
-      skillname: "Reactjs"
+      skillname: "React(JS)",
+      percentage: 75
+    },
+    {
+      skillname: "Java",
+      percentage: 55
+    },
+    {
+      skillname: "Django(Python)",
+      percentage: 60
+    },
+    {
+      skillname: "MySQL",
+      percentage: 50
+    },
+    {
+      skillname: "Oracle",
+      percentage: 45
+    },
+    {
+      skillname: "Rails(Ruby)",
+      percentage: 40
     }
   ],
   portfolio: [
