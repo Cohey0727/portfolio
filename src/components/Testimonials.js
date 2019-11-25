@@ -1,37 +1,41 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
+import {Carousel} from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 export default class Testimonials extends Component {
   render() {
-    let resumeData = this.props.resumeData;
+    let {resumeData, contents} = this.props;
     return (
       <section id="testimonials">
-        <div className="text-container">
-          <div className="row">
-            <div className="two columns header-col">
-              <h1><span>Client Testimonials</span></h1>
-            </div>
-            <div className="ten columns flex-container">
-              <div className="flexslider">
-                <ul className="slides">
-                  {
-                    resumeData.testimonials && resumeData.testimonials.map((item)=>{
-                      return(
-                        <li>
-                          <blockquote>
-                            <p>
-                            {item.description}
-                            </p>
-                            <cite>{item.name}</cite>
-                          </blockquote>
-                        </li>
-                      )
-                    })
-                  }
-                </ul>
-              </div> {/* div.flexslider ends */}
-            </div> {/* div.flex-container ends */}
-          </div> {/* row ends */}
-        </div>  {/* text-container ends */}
+        <div style={{
+          padding: 24,
+          height: 420,
+          width: '100%',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center'
+        }}>
+          <div style={{
+            height: '100%',
+            width: 360,
+          }}>
+            <Carousel autoPlay>
+              {
+                contents.map((item) => {
+                  return (
+                    <div>
+                      <img src={item.image.url}/>
+                      <a href={item.url}>
+                        <p className="legend">{item.title}</p>
+                      </a>
+                    </div>
+                  )
+                })
+              }
+            </Carousel>
+          </div>
+        </div>
       </section>
-        );
+    );
   }
 }
