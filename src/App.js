@@ -30,7 +30,6 @@ class App extends Component {
   }
   
   render() {
-    if (this.state.contents.length === 0) return <div></div>
     return (
       <div className="App">
         <Header resumeData={resumeData} />
